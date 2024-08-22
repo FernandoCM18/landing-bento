@@ -11,6 +11,7 @@ const config: Config = {
       'landing': '#202020',
       'text-primary': 'rgba(248, 248, 248, 0.95)',
       'text-secondary': 'rgba(248, 248, 248, 0.70)',
+      'text-tertiary': 'rgba(248, 248, 248, 0.50)',
       'stroke-25-button': 'rgba(255, 255, 255, 0.40)',
       'surface-background': 'rgba(40, 40, 40, 0.70)',
     }
