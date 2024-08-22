@@ -1,3 +1,4 @@
+import { Typography } from '../Typography/Typography';
 import styles from './Button.module.css';
 
 interface Props {
@@ -8,7 +9,7 @@ export const Button = ({ text = 'Button' }: Props) => {
   return (
     <div className='relative'>
       <button className={styles.btn}>
-        <span className='z-10'>{text}</span>
+        <Typography variant='Base2(SM)' text={text} />
       </button>
       <div className='btn'></div>
     </div>
