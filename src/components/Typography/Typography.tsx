@@ -32,6 +32,8 @@ export const Typography = ({ text, variant, className }: Props) => {
   switch (variant) {
     case 'H1':
       return <h1 className={`${grotesk.className} font-bold text-[64px] -tracking-[0.25px]`}>{text}</h1>;
+    case 'H2':
+      return <h2 className={`${grotesk.className} font-bold text-5xl leading-[56px] -tracking-[-0.96px] ${className}`}>{text}</h2>;
     case 'Subtitle':
       return <p className={`${rubik.className} text-[20px] leading-8 font-light text-text-secondary`}>{text}</p>
     case 'Base2(SM)':
@@ -40,5 +42,7 @@ export const Typography = ({ text, variant, className }: Props) => {
       return <p className={`${rubik.className} text-[10px] leading-3 text-text-tertiary`}>{text}</p>
     case 'Body':
       return <p className={`${inter.className} leading-6 text-text-tertiary`}>{text}</p>
+    case 'Harline':
+      return <p className={`${rubik.className} font-semibold text-xs leading-5 tracking-[0.6px] ${className}`}>{text}</p>
   }
 }
