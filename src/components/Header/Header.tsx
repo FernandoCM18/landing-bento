@@ -1,9 +1,8 @@
-import { Button } from "../Button/Button"
-import Logo from "./Logo"
+import { Button, Logo } from "@/components";
 
 export const Header = () => {
   return (
-    <header className="flex justify-between items-center py-8 min-w-[944px] max-w-[1280px]">
+    <header className="flex justify-between items-center py-8 w-full">
       <Logo />
       <Button text="Download" />
     </header>
