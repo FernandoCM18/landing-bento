@@ -44,5 +44,9 @@ export const Typography = ({ text, variant, className }: Props) => {
       return <p className={`${inter.className} leading-6 text-text-tertiary`}>{text}</p>
     case 'Harline':
       return <p className={`${rubik.className} font-semibold text-xs leading-5 tracking-[0.6px] ${className}`}>{text}</p>
+    case 'Title':
+      return <h3 className={`${rubik.className} font-medium text-xl leading-[24px] ${className}`}>{text}</h3>
+    case 'Base(R)':
+      return <p className={`${rubik.className} text-base leading-6 ${className}`}>{text}</p>
   }
 }
