@@ -1,0 +1,140 @@
+.bento {
+  position: relative;
+  flex: 1;
+}
+
+.bento>* {
+  width: 100%;
+}
+
+.bento:before,
+.bento:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 40px;
+}
+
+.bento:before {
+  backdrop-filter: blur(50px);
+  background: rgba(248, 248, 248, 0.02);
+  box-shadow: inset 2px 4px 16px rgba(248, 248, 248, 0.06);
+}
+
+.bento:after {
+  border: 1.5px solid rgba(255, 255, 255, 0.05);
+  mask-image: linear-gradient(to bottom, black, transparent 75%);
+  pointer-events: none;
+}
+
+.bento:nth-child(1) .illustration,
+.bento:nth-child(2) .illustration {
+  top: 50%;
+  left: 50%;
+  width: 389px;
+  transform: translate(-50%, -50%);
+}
+
+.bento:nth-child(1) .illustration img,
+.bento:nth-child(2) .illustration img {
+  width: 100%;
+}
+
+.bento:nth-child(3) .illustration {
+  inset: 0;
+}
+
+/* .inner {
+  position: relative;
+  z-index: 2;
+  padding: 32px 12px 48px;
+}
+
+.inner>* {
+  padding-bottom: 24px;
+} */
+
+.preview {
+  position: relative;
+  height: 328px;
+  margin-bottom: 34px;
+  overflow: hidden;
+}
+
+.preview>* {
+  margin-bottom: 28px;
+}
+
+.preview>* {
+  margin-bottom: 26px;
+}
+
+.illustration {
+  position: absolute;
+}
+
+.details {
+  padding: 0 20px;
+  opacity: 0.8;
+}
+
+.details>* {
+  padding: 0 12px;
+}
+
+.subtitle {
+  margin-bottom: 12px;
+}
+
+.subtitle>* {
+  margin-bottom: 16px;
+  font-size: 18px;
+}
+
+.subtitle>* {
+  margin-bottom: 12px;
+  font-size: 20px;
+}
+
+.content {
+  color: var(--text-tertiary);
+}
+
+.number {
+  position: absolute;
+  top: -28px;
+  left: 50%;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 68px;
+  height: 52px;
+  transform: translateX(-50%);
+}
+
+.number:before,
+.number:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 32px;
+}
+
+.number:before {
+  background: linear-gradient(0deg, rgba(248, 248, 248, 0.10) 0%, rgba(248, 248, 248, 0.10) 100%);
+  box-shadow: 0px 0px 0px 2px rgba(18, 18, 18, 0.20), inset 2px 4px 16px 0px rgba(248, 248, 248, 0.06);
+  backdrop-filter: blur(50px);
+}
+
+.number:after {
+  border: 1.5px solid rgba(255, 255, 255, 0.05);
+  mask-image: linear-gradient(170deg, black, transparent 75%);
+  pointer-events: none;
+}
+
+.number span {
+  position: relative;
+  z-index: 2;
+  opacity: 0.8;
+}
