@@ -44,7 +44,7 @@
   inset: 0;
 }
 
-/* .inner {
+.inner {
   position: relative;
   z-index: 2;
   padding: 32px 12px 48px;
@@ -52,7 +52,7 @@
 
 .inner>* {
   padding-bottom: 24px;
-} */
+}
 
 .preview {
   position: relative;

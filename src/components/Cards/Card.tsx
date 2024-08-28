@@ -16,9 +16,18 @@ export const Card = ({ title, description, image, number }: Props) => {
         <div className={styles.number}>
           <span>{number}</span>
         </div>
-        <Image src={image} alt={title} width={389} height={328} className="mb-8 w-full h-[328px]" />
-        <div className="flex flex-col items-start px-8">
-          <Typography variant="Title" text={title} />
+        <div className={`${styles.preview} h-[328px]`}>
+          <Image
+            id="image"
+            src={image}
+            alt={title}
+            width={389}
+            height={328}
+            className={`${styles.illustration} mx-auto`}
+          />
+        </div>
+        <div className="flex flex-col items-start px-8 text-start">
+          <Typography variant="Title" text={title} className="mb-3" />
           <Typography variant="Base(R)" text={description} className="text-text-tertiary text-start" />
         </div>
       </div>
