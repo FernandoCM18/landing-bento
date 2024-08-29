@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Typography } from "../Typography/Typography";
+import { Typography } from "../../Typography/Typography";
 import styles from "./Card.module.css";
 
 interface Props {
