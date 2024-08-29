@@ -5,3 +5,9 @@
 body {
   @apply bg-landing;
 }
+
+@layer components {
+  .gradient-text {
+    @apply bg-[linear-gradient(93deg,rgba(248,248,248,0.90)0.1%,rgba(248,248,248,0.50)100.1%)] bg-clip-text text-transparent;
+  }
+}
