@@ -10,10 +10,10 @@ export const HowItWorkSection = () => {
           variant="H2"
           text="Three simple steps to organized bliss"
           className={`
-          bg-[linear-gradient(93deg,rgba(248,248,248,0.90)0.1%,rgba(248,248,248,0.50)100.1%)] bg-clip-text text-transparent
-          text-pretty
-          mb-16
-        `}
+            gradient-text
+            text-pretty
+            mb-16
+          `}
         />
       </div>
       <div className="flex flex-col justify-center items-center gap-5">

@@ -9,11 +9,11 @@ export const HeroHeaderSection = () => {
       <section className="flex flex-col gap-10 items-center">
         <div>
           <Typography variant="H1" text="Your tasks, simplified" />
-          <Typography variant="Subtitle" text="Create, manage, and conquer your to-do lists with ease" />
+          <Typography variant="Subtitle" text="Create, manage, and conquer your to-do lists with ease" className='text-text-secondary' />
         </div>
         <div className="space-y-3">
           <Button text="Get started for free" />
-          <Typography variant="Small" text="v1.0.1 – macOS 12+" />
+          <Typography variant="Small" text="v1.0.1 – macOS 12+" className='text-text-tertiary' />
         </div>
         <div className="relative">
           {/* TODO: Cambiar la imagen por componentes al tenerlos listos */}
@@ -27,7 +27,7 @@ export const HeroHeaderSection = () => {
           />
         </div>
       </section>
-      <Typography variant="Body" text="Trusted by over 50,000 designers and developers" />
+      <Typography variant="Body" text="Trusted by over 50,000 designers and developers" className='text-text-tertiary' />
       <div className="flex items-center justify-center mt-6">
         {
           users.slice(0, 6).map((user) => (
