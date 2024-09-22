@@ -1,0 +1,9 @@
+.borderCircle::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border: 1.5px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  mask-image: linear-gradient(160deg, black, transparent 50%);
+  pointer-events: none;
+}
