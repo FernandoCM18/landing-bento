@@ -1,4 +1,5 @@
 import { HeroHeaderSection, HowItWorkSection, KeyFeaturesSection } from "@/sections";
+import { Testimonial } from "@/sections/Testimonial/Testimonial";
 
 export default function Home() {
   return (
@@ -6,6 +7,7 @@ export default function Home() {
       <HeroHeaderSection />
       <HowItWorkSection />
       <KeyFeaturesSection />
+      <Testimonial />
     </main>
   );
 }
