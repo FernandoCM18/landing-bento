@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { Button, Header, Typography, Avatar, Starts } from '@/components';
+import { Button, Header, Typography, Avatar, Starts, SimpleList, ItemsList, IconList } from '@/components';
 import { users } from '@/data/users';
 
 export const HeroHeaderSection = () => {
@@ -18,13 +18,20 @@ export const HeroHeaderSection = () => {
         <div className="relative">
           {/* TODO: Cambiar la imagen por componentes al tenerlos listos */}
           <Starts className='absolute top-0 left-0 w-full h-fit' />
-          <Image
-            src="/assets/images/App-screens.png"
-            alt="app-screen"
-            width={1120}
-            height={504}
-            className="relative"
-          />
+          <div className="flex items-center justify-center relative w-[1120px] h-[640px]">
+            <SimpleList style={{
+              position: 'absolute',
+              left: '0',
+            }} />
+            <ItemsList style={{
+              position: 'absolute',
+              zIndex: 10
+            }} />
+            <IconList style={{
+              position: 'absolute',
+              right: '0',
+            }} />
+          </div>
         </div>
       </section>
       <Typography variant="Body" text="Trusted by over 50,000 designers and developers" className='text-text-tertiary' />

@@ -40,6 +40,10 @@ export const Typography = ({ text, variant, className }: Props) => {
       return <p className={`${rubik.className} text-[20px] leading-8 font-light ${className}`}>{text}</p>
     case 'Base2(SM)':
       return <span className={`${rubik.className} text-sm font-semibold z-10 ${className}`}>{text}</span>
+    case 'Base2(M)':
+      return <p className={`${rubik.className} text-sm font-medium ${className}`}>{text}</p>
+    case 'Base2(R)':
+      return <p className={`${rubik.className} text-sm ${className}`}>{text}</p>
     case 'Small':
       return <p className={`${rubik.className} text-[10px] leading-3 ${className}`}>{text}</p>
     case 'Body':
@@ -52,5 +56,7 @@ export const Typography = ({ text, variant, className }: Props) => {
       return <p className={`${rubik.className} text-base leading-6 ${className}`}>{text}</p>
     case 'Base(M)':
       return <p className={`${rubik.className} font-medium leading-6 ${className}`}>{text}</p>
+    case 'Caption(R)':
+      return <p className={`${rubik.className} text-xs ${className}`}>{text}</p>
   }
 }

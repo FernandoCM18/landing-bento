@@ -8,6 +8,36 @@ body {
 
 @layer components {
   .gradient-text {
-    @apply bg-[linear-gradient(93deg,rgba(248,248,248,0.90)0.1%,rgba(248,248,248,0.50)100.1%)] bg-clip-text text-transparent;
+    background: linear-gradient(93deg, rgba(248, 248, 248, 0.90) 0.1%, rgba(248, 248, 248, 0.50) 100%);
+    @apply bg-clip-text text-transparent;
   }
+}
+
+.SimpleList {
+  position: relative;
+  width: 414px;
+  padding: 12px;
+  border-radius: 32px;
+  backdrop-filter: blur(50px);
+}
+
+.SimpleList::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 32px;
+
+  background: rgba(40, 40, 40, 0.70);
+  box-shadow: inset 2px 4px 16px 0 hsla(0, 0%, 97%, .06);
+  transition: background .2s;
+}
+
+.SimpleList::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 32px;
+
+  border: 1.5px solid hsla(0, 0%, 100%, .05);
+  mask-image: linear-gradient(180deg, #000, transparent 55%);
 }

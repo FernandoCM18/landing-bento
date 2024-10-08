@@ -3,16 +3,18 @@ import Image from 'next/image'
 interface Props {
   avatarUrl: string
   name: string
+  width?: number
+  height?: number
 };
 
-export const Avatar = ({ avatarUrl, name }: Props) => {
+export const Avatar = ({ avatarUrl, name, width = 40, height = 40 }: Props) => {
   return (
     <Image
       src={avatarUrl}
       alt={name}
-      width={40}
-      height={40}
-      className="rounded-full -mr-[14px] border-2 border-landing w-10 h-10 object-cover"
+      width={width}
+      height={height}
+      className="rounded-full -mr-[14px] border-2 border-landing object-cover"
     />
   )
 }

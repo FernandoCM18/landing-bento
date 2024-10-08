@@ -17,17 +17,17 @@ export const users = [
   {
     id: "3",
     name: "David T.",
-    avatar: "/assets/images/avatar-5.png",
+    avatar: "/assets/images/avatar-4.png",
   },
   {
     id: "4",
     name: "Lila K.",
-    avatar: "/assets/images/avatar-8.png",
+    avatar: "/assets/images/avatar-5.png",
   },
   {
     id: "5",
     name: "Carlos G.",
-    avatar: "/assets/images/avatar-9.png",
+    avatar: "/assets/images/avatar-6.png",
   },
   {
     id: "6",
