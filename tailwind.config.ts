@@ -6,6 +6,7 @@ const config: Config = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/sections/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    './src/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
     extend: {
@@ -17,8 +18,11 @@ const config: Config = {
         'stroke-25-button': 'rgba(255, 255, 255, 0.40)',
         'surface-background': 'rgba(40, 40, 40, 0.70)',
         'neutral-neutral-22': 'rgba(248, 248, 248, 0.02)',
+        'neutral-neutral-210': 'rgba(248, 248, 248, 0.10)',
+        'neutral-neutral-25': 'rgba(248, 248, 248, 0.05)',
         'neutral-neutral-110': 'rgba(255, 255, 255, 0.10)',
         'neutral-neutral-360': 'rgba(40, 40, 40, 0.60)',
+        'neutral-neutral-370': 'rgba(40, 40, 40, 0.70)',
         'neutral-neutral-410': 'rgba(18, 18, 18, 0.10)',
         'stroke-15-card': 'rgba(255, 255, 255, 0.40))',
       },
