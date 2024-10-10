@@ -28,7 +28,8 @@ const config: Config = {
       },
       boxShadow: {
         'card-dark': '2px 4px 16px 0px rgba(248, 248, 248, 0.06), 0px 24px 24px -16px rgba(5, 5, 5, 0.09), 0px 6px 13px 0px rgba(5, 5, 5, 0.10), 0px 6px 4px -4px rgba(5, 5, 5, 0.10), 0px 5px 1.5px -4px rgba(5, 5, 5, 0.25)',
-        'shadow-4': '0px 24px 32px -12px rgba(18, 18, 18, 0.10), 2px 4px 16px 0px rgba(248, 248, 248, 0.06) inset'
+        'shadow-4': '0px 24px 32px -12px rgba(18, 18, 18, 0.10), 2px 4px 16px 0px rgba(248, 248, 248, 0.06) inset',
+        'shadow-item-hover': '0px 32px 60px 0 rgba(40, 40, 40, .50)'
       },
     }
   },
