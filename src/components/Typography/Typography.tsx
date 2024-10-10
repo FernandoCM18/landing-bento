@@ -1,3 +1,4 @@
+import { memo } from 'react';
 import { inter, rubik, grotesk } from '@/config/fonts';
 import { cn } from '@/utils/cn';
 
@@ -29,7 +30,7 @@ interface Props {
   | 'Subtitle'
 };
 
-export const Typography = ({ text, variant, className }: Props) => {
+export const Typography = memo(({ text, variant, className }: Props) => {
   switch (variant) {
     case 'H1':
       return <h1 className={cn(grotesk.className, "font-bold text-[64px] -tracking-[0.25px]", className)}>{text}</h1>;
@@ -60,4 +61,6 @@ export const Typography = ({ text, variant, className }: Props) => {
     case 'Caption(R)':
       return <p className={cn(rubik.className, "text-xs", className)}>{text}</p>
   }
-}
+});
+
+Typography.displayName = 'Typography';
