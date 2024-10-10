@@ -2,10 +2,10 @@ import { CircularButton, CircularIcon, Typography, Icon } from '@/components';
 import style from './SimpleList.module.css';
 
 const todos = [
-  { id: 1, text: 'Today', count: 3, icon: <CircularIcon icon="today-task-item-avatar-icon.svg" /> },
-  { id: 2, text: 'Work', count: 3, icon: <CircularIcon icon="work-task-item-avatar-icon.svg" /> },
-  { id: 3, text: 'Upcoming', count: 3, icon: <CircularIcon icon="upcoming-task-item-avatar-icon.svg" /> },
-  { id: 4, text: 'Completed', count: 3, icon: <CircularIcon icon="completed-task-item-avatar-icon.svg" /> },
+  { id: 1, text: 'Today', count: 3, icon: <CircularIcon icon="today" /> },
+  { id: 2, text: 'Work', count: 3, icon: <CircularIcon icon="work" /> },
+  { id: 3, text: 'Upcoming', count: 3, icon: <CircularIcon icon="upcoming" /> },
+  { id: 4, text: 'Completed', count: 3, icon: <CircularIcon icon="completedTask" /> },
 ];
 
 interface Props extends React.HTMLAttributes<HTMLDivElement> { }
