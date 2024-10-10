@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import { Typography, CircularButton, Icon } from '@/components';
+import { cn } from '@/utils/cn';
 import { tasks } from '@/data/tasks';
 import style from './ItemsList.module.css';
 
@@ -64,35 +65,38 @@ interface ItemProps {
 
 const Item = ({ title, isActions, isHover, isSelected }: ItemProps) => {
   return (
-    <li className={`
-      flex justify-between items-center 
-      rounded-xl 
-      px-3 
-      py-4
-      ${isSelected ? 'bg-neutral-neutral-22' : 'bg-neutral-neutral-25'}
-    `}>
-      <div className="flex gap-3 items-center">
-        {
-          isSelected ? (
-            <Icon name="taskItemSelected" />
-          ) : (
-            <Icon name="taskItemNotSelected" />
-          )
-        }
+    <>
+      {(isHover && isActions === false) && (
+        <div className='bg-neutral-neutral-210 w-full rounded-xl h-14 relative' />
+      )}
+      <li className={cn(
+        "flex justify-between items-center rounded-xl px-3 py-4",
+        isSelected ? 'bg-neutral-neutral-22' : 'bg-neutral-neutral-25',
+        (isHover && isActions === false) && 'absolute top-[145px] ml-28 w-full -rotate-2 backdrop-blur-[32px] bg-neutral-neutral-210 shadow-shadow-item-hover'
+      )}>
+        <div className="flex gap-3 items-center">
+          {
+            isSelected ? (
+              <Icon name="taskItemSelected" />
+            ) : (
+              <Icon name="taskItemNotSelected" />
+            )
+          }
 
-        <Typography variant="Base2(M)" text={title} className="text-text-secondary" />
-      </div>
-      <div className="flex gap-3">
-        {
-          isActions && (
-            <>
-              <Icon name="copy" />
-              <Icon name="trash" />
-            </>
-          )
-        }
-        <Icon name="dragGrab" />
-      </div>
-    </li>
+          <Typography variant="Base2(M)" text={title} className="text-text-secondary" />
+        </div>
+        <div className="flex gap-3">
+          {
+            isActions && (
+              <>
+                <Icon name="copy" />
+                <Icon name="trash" />
+              </>
+            )
+          }
+          <Icon name="dragGrab" className='fill-text-tertiary' />
+        </div>
+      </li>
+    </>
   )
 };
