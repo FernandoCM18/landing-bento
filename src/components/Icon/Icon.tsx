@@ -144,29 +144,55 @@ const ColorPaletteIcon: SvgIcon = (props) => (
   </svg>
 );
 
+const TodayIcon: SvgIcon = (props) => (
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
+    <path d="M12.0002 3.29083V1.76758M5.8418 18.1586L4.7647 19.2357M12.0002 22.2327V20.7094M19.2353 4.76468L18.1582 5.84179M20.709 12.0001H22.2322M18.1582 18.1586L19.2353 19.2357M1.76758 12.0001H3.29083M4.76462 4.76462L5.84173 5.84173M15.7123 8.28781C17.7626 10.3381 17.7626 13.6622 15.7123 15.7124C13.6621 17.7627 10.3379 17.7627 8.28769 15.7124C6.23744 13.6622 6.23744 10.3381 8.28769 8.28781C10.3379 6.23756 13.6621 6.23756 15.7123 8.28781Z" stroke="#F8F8F8" strokeOpacity="0.95" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+  </svg>
+);
+
+const WorkIcon: SvgIcon = (props) => (
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
+    <g opacity="0.8">
+      <path d="M20.25 9.75V7.25C20.25 5.317 18.683 3.75 16.75 3.75H7.25C5.317 3.75 3.75 5.317 3.75 7.25V9.75M20.25 9.75V16.75C20.25 18.683 18.683 20.25 16.75 20.25H7.25C5.317 20.25 3.75 18.683 3.75 16.75V9.75M20.25 9.75H3.75" stroke="#F8F8F8" strokeOpacity="0.95" strokeWidth="1.5" strokeLinecap="square" strokeLinejoin="round" />
+      <path d="M12.5 13.5C12.5 13.7761 12.2761 14 12 14C11.7239 14 11.5 13.7761 11.5 13.5C11.5 13.2239 11.7239 13 12 13C12.2761 13 12.5 13.2239 12.5 13.5Z" fill="#F8F8F8" fill-opacity="0.95" />
+      <path d="M12 14.25C12.4142 14.25 12.75 13.9142 12.75 13.5C12.75 13.0858 12.4142 12.75 12 12.75C11.5858 12.75 11.25 13.0858 11.25 13.5C11.25 13.9142 11.5858 14.25 12 14.25Z" stroke="#F8F8F8" strokeOpacity="0.95" strokeWidth="0.5" />
+    </g>
+  </svg>
+);
+
+const CompletedTaskIcon: SvgIcon = (props) => (
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
+    <path d="M15 9.5L10.5 15L8.5 13M21.25 12C21.25 17.1086 17.1086 21.25 12 21.25C6.89137 21.25 2.75 17.1086 2.75 12C2.75 6.89137 6.89137 2.75 12 2.75C17.1086 2.75 21.25 6.89137 21.25 12Z" stroke="#F8F8F8" strokeOpacity="0.7" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+  </svg>
+
+)
+
 const ICONS = {
-  star: StarIcon,
-  heart: HeartIcon,
+  arrowLeft: ArrowLeftIcon,
   chevronLeft: ChevronLeftIcon,
   chevronRight: ChevronRightIcon,
-  upcoming: UpcomingIcon,
-  arrowLeft: ArrowLeftIcon,
-  plus: PlusIcon,
-  taskListFooter: TaskListFooterIcon,
-  dots: DotsIcon,
-  taskItemSelected: TaskItemSelectedIcon,
-  taskItemNotSelected: TaskItemNotSelectedIcon,
+  colorPalette: ColorPaletteIcon,
   copy: CopyIcon,
-  trash: TrashIcon,
+  dots: DotsIcon,
   dragGrab: DragGrabIcon,
-  search: SearchIcon,
-  numberList: NumberListIcon,
+  heart: HeartIcon,
   macbook: MacbookIcon,
   minimal: MinimalIcons,
-  colorPalette: ColorPaletteIcon
+  numberList: NumberListIcon,
+  plus: PlusIcon,
+  search: SearchIcon,
+  star: StarIcon,
+  taskItemNotSelected: TaskItemNotSelectedIcon,
+  taskItemSelected: TaskItemSelectedIcon,
+  taskListFooter: TaskListFooterIcon,
+  today: TodayIcon,
+  trash: TrashIcon,
+  upcoming: UpcomingIcon,
+  work: WorkIcon,
+  completedTask: CompletedTaskIcon,
 } as const;
 
-type IconName = keyof typeof ICONS;
+export type IconName = keyof typeof ICONS;
 
 interface IconProps extends Omit<React.SVGProps<SVGSVGElement>, 'ref' | 'name'> {
   name: IconName;
