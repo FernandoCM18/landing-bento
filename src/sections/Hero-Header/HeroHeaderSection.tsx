@@ -21,7 +21,8 @@ export const HeroHeaderSection = () => {
           <div className="flex items-center justify-center relative w-[1120px] h-[640px]">
             <SimpleList style={{
               position: 'absolute',
-              left: '0',
+              left: '75px',
+              height: '375px'
             }} />
             <ItemsList style={{
               position: 'absolute',
@@ -29,7 +30,8 @@ export const HeroHeaderSection = () => {
             }} />
             <IconList style={{
               position: 'absolute',
-              right: '0',
+              right: '75px',
+              height: '375px'
             }} />
           </div>
         </div>
