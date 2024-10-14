@@ -9,42 +9,21 @@
 
 .BorderTestimonial {
   border: 1px solid rgba(248, 248, 248, 0.02);
-
 }
 
-.swiper-testimonials-author {
-  overflow: visible !important;
-}
-
-.swiper-slide.swiper-slide-active {
-  background: rgba(248, 248, 248, 0.10);
-  box-shadow: 0px 24px 32px -12px rgba(18, 18, 18, 0.10), inset 2px 4px 16px 0px rgba(248, 248, 248, 0.06);
-}
-
-.swiper-slide.swiper-slide-active:before {
-  opacity: 1;
-}
-
-.swiper-pagination-bullets.swiper-pagination-testimonials {
-  position: relative;
-  display: flex;
-  top: auto !important;
-  left: auto !important;
-  right: auto !important;
-  bottom: auto !important;
-  margin: 0 12px;
-}
-
-.swiper-pagination-bullets.swiper-pagination-testimonials .swiper-pagination-bullet {
-  width: 8px;
-  height: 8px;
-  margin: 0 4px;
-  background: rgba(#f8f8f8, .25);
+.AuthorTestimonial::before {
+  content: "";
+  position: absolute;
+  top: 22px;
+  right: 16px;
+  z-index: 2;
+  width: 24px;
+  height: 24px;
+  background: rgba(40, 40, 40, .50);
   border-radius: 50%;
-  opacity: 1;
-  transition: background .2s;
-}
-
-.swiper-pagination-bullets.swiper-pagination-testimonials .swiper-pagination-bullet.swiper-pagination-bullet-active {
-  background: rgba(#f8f8f8, .7);
+  background-image: url('/assets/icons/chevron-right-icon.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 0.2s;
 }
