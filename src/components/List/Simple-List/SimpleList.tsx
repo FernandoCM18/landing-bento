@@ -14,7 +14,7 @@ export const SimpleList = (props: Props) => {
   return (
     <div className={`SimpleList space-y-3`} {...props}>
       <div className="flex justify-between items-center gap-3">
-        <div className="flex gap-3 items-center w-full h-11 bg-neutral-neutral-370 rounded-[48px] p-3">
+        <div className="flex gap-3 items-center w-full h-11 bg-raisin-black/[0.70] rounded-[48px] p-3">
           <Icon name="search" />
           <Typography variant="Base2(R)" text="Search list..." className="text-text-primary" />
         </div>

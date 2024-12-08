@@ -48,7 +48,7 @@ const TaskItem = ({ icon, text, positions }: TaskItemProps) => {
       w-fit
       pl-3 pt-3 pb-3 pr-8 
       rounded-[68px] 
-      bg-neutral-neutral-110 
+      bg-neutral-neutral/[0.10] 
       shadow-shadow-4 
       backdrop-blur-lg
     `}>
@@ -57,7 +57,7 @@ const TaskItem = ({ icon, text, positions }: TaskItemProps) => {
           w-11 h-11 p-[10px] 
           flex items-center justify-center 
           rounded-full 
-          bg-neutral-neutral-360 
+          bg-raisin-black/[0.60]
           shadow-shadow-4
           ${styles.borderCircle}
         `}>

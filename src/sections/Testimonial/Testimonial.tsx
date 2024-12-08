@@ -66,7 +66,7 @@ export const Testimonial = () => {
                   className={cn(
                     Style.BorderTestimonial,
                     Style.AuthorTestimonial,
-                    "bg-neutral-neutral-22 rounded-[20px] p-3 mt-3")}
+                    "bg-neutral-neutral/[0.02] rounded-[20px] p-3 mt-3")}
                   key={testimonial.id}
                 >
                   <div className="flex gap-4">

@@ -67,12 +67,12 @@ const Item = ({ title, isActions, isHover, isSelected }: ItemProps) => {
   return (
     <>
       {(isHover && isActions === false) && (
-        <div className='bg-neutral-neutral-210 w-full rounded-xl h-14 relative' />
+        <div className='bg-neutral-neutral/[0.10] w-full rounded-xl h-14 relative' />
       )}
       <li className={cn(
         "flex justify-between items-center rounded-xl px-3 py-4",
-        isSelected ? 'bg-neutral-neutral-22' : 'bg-neutral-neutral-25',
-        (isHover && isActions === false) && 'absolute top-[145px] ml-28 w-full -rotate-2 backdrop-blur-[32px] bg-neutral-neutral-210 shadow-shadow-item-hover'
+        isSelected ? 'bg-neutral-neutral/[0.02]' : 'bg-neutral-neutral/[0.05]',
+        (isHover && isActions === false) && 'absolute top-[145px] ml-28 w-full -rotate-2 backdrop-blur-[32px] bg-neutral-neutral/[0.10] shadow-shadow-item-hover'
       )}>
         <div className="flex gap-3 items-center">
           {
