@@ -109,14 +109,26 @@ export const Testimonial = () => {
         </div>
       </div>
       <div className="flex gap-4 items-center justify-center w-[200px] h-14 mx-auto p-2">
-        <button className="w-10 h-10 swiper-arrow-prev">
-          <Icon name="chevronLeft" />
+        <button className={cn(
+          "swiper-arrow-prev",
+          Style.BtnGradient
+        )}>
+          <Icon name="chevronLeft" style={{
+            position: 'relative',
+            zIndex: 2,
+          }} />
         </button>
 
         <div className={cn("swiper-pagination-testimonials")} />
 
-        <button className="w-10 h-10 swiper-arrow-next">
-          <Icon name="chevronRight" />
+        <button className={cn(
+          "swiper-arrow-next",
+          Style.BtnGradient
+        )}>
+          <Icon name="chevronRight" style={{
+            position: 'relative',
+            zIndex: 2,
+          }} />
         </button>
 
       </div>
